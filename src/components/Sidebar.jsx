@@ -37,7 +37,7 @@ const Sidebar = ({ userName, isCollapsed, toggleSidebar }) => {
   };
 
   return (
-    <aside className={`bg-gray-800 text-white py-6 min-h-screen fixed left-0 top-0 transition-width duration-300 ${isCollapsed ? "w-16" : "w-60"}`}>
+    <aside className={`bg-gray-800 text-white py-6 h-[100%] fixed left-0 top-0 transition-width duration-300 ${isCollapsed ? "w-16" : "w-60"}`}>
       <button 
         onClick={toggleSidebar} 
         className="text-2xl mb-6 px-4 focus:outline-none hover:text-gray-400 transition-colors duration-300"
